@@ -9,7 +9,7 @@ oc label namespace <ns-name> operator.tekton.dev/enable-annotation=enabled
 Adding label to namespace will make sure that created eventlistener resources to run as `https`
 
 ### Implementation Detail:
-When OpenShift Pipleine installed through Operator a `pipeline-webhook-proxy` pod will be running always
+When OpenShift Pipleine installed through Operator a `tekton-operator-proxy-webhook-` pod will be running always
 
 Below are the functionality of proxy webhook pod
 * Webhook watches for label on namespace and whenever it finds it tries to set up below Annoation
